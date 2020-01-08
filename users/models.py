@@ -15,3 +15,6 @@ class User(AbstractUser):
 class Demo(models.Model):
     "Generated Model"
     demo = models.DateField(auto_now=False, auto_now_add=False,)
+    demotest = models.DecimalField(
+        max_digits=30, decimal_places=10, null=True, blank=True,
+    )
