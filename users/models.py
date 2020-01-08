@@ -10,3 +10,8 @@ class User(AbstractUser):
 
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
+
+
+class Demo(models.Model):
+    "Generated Model"
+    demo = models.DateField(auto_now=False, auto_now_add=False,)
