@@ -38,3 +38,18 @@ class HomePage(models.Model):
 class Test(models.Model):
     "Generated Model"
     test = models.TextField()
+
+
+class Testdemo1(models.Model):
+    "Generated Model"
+    tes = models.SmallIntegerField()
+
+
+class TestDemo(models.Model):
+    "Generated Model"
+    design = models.BigIntegerField()
+
+
+class Table(models.Model):
+    "Generated Model"
+    column = models.TextField()
