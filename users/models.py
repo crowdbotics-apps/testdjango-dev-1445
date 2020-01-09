@@ -18,3 +18,8 @@ class Demo(models.Model):
     demotest = models.DecimalField(
         null=True, blank=True, max_digits=30, decimal_places=10,
     )
+
+
+class Te(models.Model):
+    "Generated Model"
+    te = models.BinaryField()
