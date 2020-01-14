@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "066c64f10168d3c4ccf3e22b7a4f6c5fff745f927070627b53216048904960ef"
+            "sha256": "a1342c72bb0900e83e5f20acd6df50b3e8d836f4b099ad900d6edc97200a3ff0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -90,13 +90,6 @@
             "index": "pypi",
             "version": "==0.1.23"
         },
-        "blasy": {
-            "hashes": [
-                "sha256:fbb1ddec935c3de8cb55da4998601731d86b7ff4e0dc63c3c3b54845061dbfd1"
-            ],
-            "index": "pypi",
-            "version": "==0.1.2"
-        },
         "blaz": {
             "hashes": [
                 "sha256:2d419c06bc5edbedd92fb6aa4df166245a001a1558af70ee433c526e7efed488"
@@ -137,13 +130,6 @@
                 "sha256:5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"
             ],
             "version": "==7.0"
-        },
-        "configparser": {
-            "hashes": [
-                "sha256:254c1d9c79f60c45dfde850850883d5aaa7f19a23f13561243a050d5a7c3fe4c",
-                "sha256:c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df"
-            ],
-            "version": "==4.0.2"
         },
         "coreapi": {
             "hashes": [
