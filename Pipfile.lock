@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a97574efb5dff867ee4ccf7bccd7a94fccac1c2f3c2281c0826fee6559640318"
+            "sha256": "29e4b6301e2e04f8bced5cd16f418860892beaeef0520ebda645845a34ad169f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,13 +16,6 @@
         ]
     },
     "default": {
-        "ansicolors": {
-            "hashes": [
-                "sha256:00d2dde5a675579325902536738dd27e4fac1fd68f773fe36c21044eb559e187",
-                "sha256:99f94f5e3348a0bcd43c82e5fc4414013ccc19d70bd939ad71e0133ce9c372e0"
-            ],
-            "version": "==1.1.8"
-        },
         "beautifulsoup4": {
             "hashes": [
                 "sha256:05fd825eb01c290877657a56df4c6e4c311b3965bda790c613a3d6fb01a5462a",
@@ -67,13 +60,6 @@
             ],
             "index": "pypi",
             "version": "==1.0.6"
-        },
-        "blaz": {
-            "hashes": [
-                "sha256:2d419c06bc5edbedd92fb6aa4df166245a001a1558af70ee433c526e7efed488"
-            ],
-            "index": "pypi",
-            "version": "==0.0.25"
         },
         "certifi": {
             "hashes": [
