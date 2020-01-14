@@ -6,16 +6,29 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0011_testdata'),
+        ("home", "0011_testdata"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='TestModel',
+            name="TestModel",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('designtest', models.GenericIPAddressField(protocol='IPv4')),
-                ('designmodel', models.DecimalField(blank=True, decimal_places=10, max_digits=30, null=True)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("designtest", models.GenericIPAddressField(protocol="IPv4")),
+                (
+                    "designmodel",
+                    models.DecimalField(
+                        blank=True, decimal_places=10, max_digits=30, null=True
+                    ),
+                ),
             ],
         ),
     ]
