@@ -7,7 +7,6 @@ def home(request):
     packages = [
 	{'name':'chainer-cuda-deps', 'url': 'http://pypi.python.org/pypi/chainer-cuda-deps/1.1.0.1'},
 	{'name':'chainerboard', 'url': 'http://pypi.python.org/pypi/chainerboard/0.1.5'},
-	{'name':'chainercv', 'url': 'http://pypi.python.org/pypi/chainercv/0.8.0'},
         {
             "name": "django-allauth",
             "url": "https://pypi.org/project/django-allauth/0.38.0/",
