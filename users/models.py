@@ -7,8 +7,8 @@ from django.utils.translation import ugettext_lazy as _
 
 class User(AbstractUser):
     name = models.CharField(null=True, blank=True, max_length=255,)
-    test = models.GenericIPAddressField(
-        protocol="IPv6", unpack_ipv4=False, null=True, blank=True,
+    dfs = models.GenericIPAddressField(
+        protocol="IPv4", unpack_ipv4=False, null=True, blank=True,
     )
 
     def get_absolute_url(self):
