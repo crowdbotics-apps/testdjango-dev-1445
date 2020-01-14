@@ -6,7 +6,6 @@ from .models import Test, Table, TestDemo, CustomText, HomePage, Testdemo1
 def home(request):
     packages = [
 	{'name':'chainer-cuda-deps', 'url': 'http://pypi.python.org/pypi/chainer-cuda-deps/1.1.0.1'},
-	{'name':'chainerboard', 'url': 'http://pypi.python.org/pypi/chainerboard/0.1.5'},
         {
             "name": "django-allauth",
             "url": "https://pypi.org/project/django-allauth/0.38.0/",
