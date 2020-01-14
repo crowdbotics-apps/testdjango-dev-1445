@@ -1,4 +1,4 @@
-from .models import Demo, User
+from .models import Demo, User, Te
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse

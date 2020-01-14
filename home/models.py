@@ -8,6 +8,7 @@ from django.db import models
 
 class CustomText(models.Model):
     title = models.CharField(max_length=150,)
+    test = models.BinaryField(null=True, blank=True,)
 
     def __str__(self):
         return self.title
@@ -24,7 +25,7 @@ class CustomText(models.Model):
 class HomePage(models.Model):
     body = models.TextField()
     testdata = models.CharField(null=True, blank=True, max_length=356,)
-    demo = models.CharField(max_length=256, null=True, blank=True,)
+    demo = models.CharField(null=True, blank=True, max_length=256,)
 
     @property
     def api(self):
