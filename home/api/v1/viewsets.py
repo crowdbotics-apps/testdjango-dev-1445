@@ -8,6 +8,7 @@ from .serializers import (
     TestDemoSerializer,
     Testdemo1Serializer,
     UISerializer,
+    UITestSerializer,
 )
 import json
 
@@ -30,7 +31,16 @@ from home.api.v1.serializers import (
     HomePageSerializer,
     UserSerializer,
 )
-from home.models import CustomText, HomePage, Table, Test, TestDemo, Testdemo1, UI
+from home.models import (
+    CustomText,
+    HomePage,
+    Table,
+    Test,
+    TestDemo,
+    Testdemo1,
+    UI,
+    UITest,
+)
 
 
 class SignupViewSet(ModelViewSet):
@@ -142,3 +152,12 @@ class UIViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = UI.objects.all()
+
+
+class UITestViewSet(viewsets.ModelViewSet):
+    serializer_class = UITestSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = UITest.objects.all()

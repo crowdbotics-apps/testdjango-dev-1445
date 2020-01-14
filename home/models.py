@@ -59,3 +59,8 @@ class Table(models.Model):
 class UI(models.Model):
     "Generated Model"
     ui = models.CharField(max_length=257,)
+
+
+class UITest(models.Model):
+    "Generated Model"
+    test = models.EmailField(max_length=254,)
