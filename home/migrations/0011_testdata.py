@@ -7,16 +7,38 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0010_uitest'),
+        ("home", "0010_uitest"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='TestData',
+            name="TestData",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('test', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.PROTECT, related_name='testdata_test', to='home.HomePage')),
-                ('testdata', models.ManyToManyField(related_name='testdata_testdata', to='home.Table')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "test",
+                    models.ForeignKey(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="testdata_test",
+                        to="home.HomePage",
+                    ),
+                ),
+                (
+                    "testdata",
+                    models.ManyToManyField(
+                        related_name="testdata_testdata", to="home.Table"
+                    ),
+                ),
             ],
         ),
     ]

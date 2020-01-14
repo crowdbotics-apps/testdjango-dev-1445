@@ -76,3 +76,11 @@ class TestData(models.Model):
         blank=True,
         related_name="testdata_test",
     )
+
+
+class TestModel(models.Model):
+    "Generated Model"
+    designtest = models.GenericIPAddressField(protocol="IPv4", unpack_ipv4=False,)
+    designmodel = models.DecimalField(
+        max_digits=30, decimal_places=10, null=True, blank=True,
+    )

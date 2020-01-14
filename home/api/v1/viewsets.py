@@ -8,6 +8,7 @@ from .serializers import (
     TestDataSerializer,
     TestDemoSerializer,
     Testdemo1Serializer,
+    TestModelSerializer,
     UISerializer,
     UITestSerializer,
 )
@@ -40,6 +41,7 @@ from home.models import (
     TestData,
     TestDemo,
     Testdemo1,
+    TestModel,
     UI,
     UITest,
 )
@@ -172,3 +174,12 @@ class TestDataViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = TestData.objects.all()
+
+
+class TestModelViewSet(viewsets.ModelViewSet):
+    serializer_class = TestModelSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = TestModel.objects.all()

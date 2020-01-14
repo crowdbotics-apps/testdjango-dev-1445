@@ -16,6 +16,7 @@ from home.models import (
     TestData,
     TestDemo,
     Testdemo1,
+    TestModel,
     UI,
     UITest,
 )
@@ -133,4 +134,10 @@ class UITestSerializer(serializers.ModelSerializer):
 class TestDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = TestData
+        fields = "__all__"
+
+
+class TestModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TestModel
         fields = "__all__"
