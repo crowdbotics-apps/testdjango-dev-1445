@@ -10,9 +10,6 @@ class CustomText(models.Model):
     title = models.CharField(max_length=150,)
     test = models.BinaryField(null=True, blank=True,)
     designData = models.IntegerField(null=True, blank=True,)
-    titledesign = models.GenericIPAddressField(
-        null=True, blank=True, protocol="IPv6", unpack_ipv4=False,
-    )
 
     def __str__(self):
         return self.title
@@ -88,3 +85,8 @@ class TestModel(models.Model):
     designmodel = models.DecimalField(
         null=True, blank=True, max_digits=30, decimal_places=10,
     )
+
+
+class Dummy(models.Model):
+    "Generated Model"
+    dummy = models.GenericIPAddressField(protocol="IPv4", unpack_ipv4=False,)

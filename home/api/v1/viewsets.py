@@ -2,6 +2,7 @@ from rest_framework import viewsets
 from rest_framework import authentication
 from .serializers import (
     CustomTextSerializer,
+    DummySerializer,
     HomePageSerializer,
     TableSerializer,
     TestSerializer,
@@ -35,6 +36,7 @@ from home.api.v1.serializers import (
 )
 from home.models import (
     CustomText,
+    Dummy,
     HomePage,
     Table,
     Test,
@@ -183,3 +185,12 @@ class TestModelViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = TestModel.objects.all()
+
+
+class DummyViewSet(viewsets.ModelViewSet):
+    serializer_class = DummySerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = Dummy.objects.all()

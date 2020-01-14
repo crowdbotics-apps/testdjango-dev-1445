@@ -10,6 +10,7 @@ from rest_framework import serializers
 from rest_auth.serializers import PasswordResetSerializer
 from home.models import (
     CustomText,
+    Dummy,
     HomePage,
     Table,
     Test,
@@ -140,4 +141,10 @@ class TestDataSerializer(serializers.ModelSerializer):
 class TestModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = TestModel
+        fields = "__all__"
+
+
+class DummySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Dummy
         fields = "__all__"
