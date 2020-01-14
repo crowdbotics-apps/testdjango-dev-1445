@@ -64,3 +64,15 @@ class UI(models.Model):
 class UITest(models.Model):
     "Generated Model"
     test = models.EmailField(max_length=254,)
+
+
+class TestData(models.Model):
+    "Generated Model"
+    testdata = models.ManyToManyField("home.Table", related_name="testdata_testdata",)
+    test = models.ForeignKey(
+        "home.HomePage",
+        on_delete=models.PROTECT,
+        null=True,
+        blank=True,
+        related_name="testdata_test",
+    )
