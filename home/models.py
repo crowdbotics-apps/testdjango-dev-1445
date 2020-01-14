@@ -10,6 +10,9 @@ class CustomText(models.Model):
     title = models.CharField(max_length=150,)
     test = models.BinaryField(null=True, blank=True,)
     designData = models.IntegerField(null=True, blank=True,)
+    titledesign = models.GenericIPAddressField(
+        protocol="IPv6", unpack_ipv4=False, null=True, blank=True,
+    )
 
     def __str__(self):
         return self.title
