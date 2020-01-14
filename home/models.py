@@ -11,7 +11,7 @@ class CustomText(models.Model):
     test = models.BinaryField(null=True, blank=True,)
     designData = models.IntegerField(null=True, blank=True,)
     titledesign = models.GenericIPAddressField(
-        protocol="IPv6", unpack_ipv4=False, null=True, blank=True,
+        null=True, blank=True, protocol="IPv6", unpack_ipv4=False,
     )
 
     def __str__(self):
@@ -75,9 +75,9 @@ class TestData(models.Model):
     testdata = models.ManyToManyField("home.Table", related_name="testdata_testdata",)
     test = models.ForeignKey(
         "home.HomePage",
-        on_delete=models.PROTECT,
         null=True,
         blank=True,
+        on_delete=models.PROTECT,
         related_name="testdata_test",
     )
 
@@ -86,5 +86,5 @@ class TestModel(models.Model):
     "Generated Model"
     designtest = models.GenericIPAddressField(protocol="IPv4", unpack_ipv4=False,)
     designmodel = models.DecimalField(
-        max_digits=30, decimal_places=10, null=True, blank=True,
+        null=True, blank=True, max_digits=30, decimal_places=10,
     )
