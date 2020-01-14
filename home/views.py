@@ -5,6 +5,7 @@ from .models import Test, Table, TestDemo, CustomText, HomePage, Testdemo1
 
 def home(request):
     packages = [
+	{'name':'chainer-cuda-deps', 'url': 'http://pypi.python.org/pypi/chainer-cuda-deps/1.1.0.1'},
 	{'name':'chainerboard', 'url': 'http://pypi.python.org/pypi/chainerboard/0.1.5'},
 	{'name':'chainer_addons', 'url': 'http://pypi.python.org/pypi/chainer_addons/0.1.3'},
 	{'name':'blast-score-ratio', 'url': 'http://pypi.python.org/pypi/blast-score-ratio/1.0.6'},

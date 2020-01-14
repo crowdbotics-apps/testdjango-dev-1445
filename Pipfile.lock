@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ac2ac24d3c5883c23294f5a9315ba0d51d9dd021a255f5c0f9946685c62baf1e"
+            "sha256": "69355dd4ef6e481d61c00cbd10183f153e802eac2239b1b0ddaefde3d2848c1e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,13 @@
         ]
     },
     "default": {
+        "appdirs": {
+            "hashes": [
+                "sha256:9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92",
+                "sha256:d8b24664561d0d34ddfaec54636d502d7cea6e29c3eaf68f3df6180863e2166e"
+            ],
+            "version": "==1.4.3"
+        },
         "argh": {
             "hashes": [
                 "sha256:a9b3aaa1904eeb78e32394cd46c6f37ac0fb4af6dc488daa58971bdc7d7fcaf3",
@@ -88,6 +95,13 @@
             "index": "pypi",
             "version": "==0.7.0"
         },
+        "chainer-cuda-deps": {
+            "hashes": [
+                "sha256:edb82fbd8d40c63aa071b191bb2b73aaf73b9be9419658074adaa023fd56586d"
+            ],
+            "index": "pypi",
+            "version": "==1.1.0.1"
+        },
         "chainerboard": {
             "hashes": [
                 "sha256:1bad20014d273c416a30acf98db068086f1b5ae2c2f22677ed764b88e320adf7"
@@ -149,6 +163,13 @@
                 "sha256:cd7b2d1018258d7247a71425e9f26463dfb444d411c39569972f4ce586b0c9d8"
             ],
             "version": "==0.10.0"
+        },
+        "decorator": {
+            "hashes": [
+                "sha256:54c38050039232e1db4ad7375cfce6748d7b41c29e95a081c8a6d2c30364a2ce",
+                "sha256:5d19b92a3c8f7f101c8dd86afd86b0f061a8ce4540ab8cd401fa2542756bce6d"
+            ],
+            "version": "==4.4.1"
         },
         "defusedxml": {
             "hashes": [
@@ -335,6 +356,12 @@
             ],
             "version": "==1.1.0"
         },
+        "mako": {
+            "hashes": [
+                "sha256:a36919599a9b7dc5d86a7a8988f23a9a3a3d083070023bab23d64f7f1d1e0a4b"
+            ],
+            "version": "==1.1.0"
+        },
         "markupsafe": {
             "hashes": [
                 "sha256:00bc623926325b26bb9605ae9eae8a215691f33cae5df11ca5424f06f2d1f473",
@@ -516,6 +543,12 @@
             ],
             "version": "==5.0.0"
         },
+        "pycuda": {
+            "hashes": [
+                "sha256:ada56ce98a41f9f95fe18809f38afbae473a5c62d346cfa126a2d5477f24cc8a"
+            ],
+            "version": "==2019.1.2"
+        },
         "pyfcm": {
             "hashes": [
                 "sha256:980b3d8c7627ec08557d8e1dc4b924fb5aa280821f422c025a1e2bd720628ff7",
@@ -543,6 +576,12 @@
                 "sha256:628d365d687e12da12d02c6691170f4451db28d6d68d050007e4a40065868502"
             ],
             "version": "==3.1.0"
+        },
+        "pytools": {
+            "hashes": [
+                "sha256:ce2d702ae4ef10a70197b00b93141461140d00578f2a862fa946ca1446a300db"
+            ],
+            "version": "==2019.1.1"
         },
         "pytz": {
             "hashes": [
@@ -620,6 +659,13 @@
                 "sha256:c9aa2e41b556c06931635588f5556d090182dbd456b73105af85a3796193580b"
             ],
             "version": "==0.7.5"
+        },
+        "scikit-cuda": {
+            "hashes": [
+                "sha256:46e05613d25bbc988c63bfbdbd6adf0e0fa2cdba0827f0c5595d77d9f45aa3ba",
+                "sha256:a89350575709190263833f97701dad8628fb6841616e581b546e63bf0b0085c4"
+            ],
+            "version": "==0.5.3"
         },
         "simplejson": {
             "hashes": [
