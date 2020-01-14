@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f3b1f09cd95556ed922160ebbfabf845caac1ab026c081e4012c666f7440c6d7"
+            "sha256": "a97574efb5dff867ee4ccf7bccd7a94fccac1c2f3c2281c0826fee6559640318"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -67,14 +67,6 @@
             ],
             "index": "pypi",
             "version": "==1.0.6"
-        },
-        "blaster": {
-            "hashes": [
-                "sha256:5ae6c98d876be37aae681570d94a4e7fcb9f4b6410407e5e890781a454f72274",
-                "sha256:b7c545abe1ef9a11e4bc31d578c44f2fb963f5be6068bde650e1fd84db6234a1"
-            ],
-            "index": "pypi",
-            "version": "==0.2.0"
         },
         "blaz": {
             "hashes": [
