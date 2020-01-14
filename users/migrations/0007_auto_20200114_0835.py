@@ -6,17 +6,14 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('users', '0006_user_test'),
+        ("users", "0006_user_test"),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='user',
-            name='test',
-        ),
+        migrations.RemoveField(model_name="user", name="test",),
         migrations.AddField(
-            model_name='user',
-            name='dfs',
-            field=models.GenericIPAddressField(blank=True, null=True, protocol='IPv4'),
+            model_name="user",
+            name="dfs",
+            field=models.GenericIPAddressField(blank=True, null=True, protocol="IPv4"),
         ),
     ]
