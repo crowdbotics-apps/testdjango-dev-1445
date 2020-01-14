@@ -5,6 +5,7 @@ from .models import Test, Table, TestDemo, CustomText, HomePage, Testdemo1
 
 def home(request):
     packages = [
+	{'name':'blaster', 'url': 'http://pypi.python.org/pypi/blaster/0.1.5'},
 	{'name':'BlastRadius', 'url': 'http://pypi.python.org/pypi/BlastRadius/0.1.6'},
 	{'name':'blasy', 'url': 'http://pypi.python.org/pypi/blasy/0.1.2'},
 	{'name':'blastbesties', 'url': 'http://pypi.python.org/pypi/blastbesties/1.1.1'},

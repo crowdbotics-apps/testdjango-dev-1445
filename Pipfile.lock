@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "52d0a968cf0b36cd0cfa8c1ccea1a44372b99902050f01b4828f541a09336047"
+            "sha256": "33bbef3f346f82b49e6e25977a80280fb359292d2fd1550e8756395d7fe97cf1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -44,6 +44,14 @@
             ],
             "index": "pypi",
             "version": "==1.1.1"
+        },
+        "blaster": {
+            "hashes": [
+                "sha256:5ae6c98d876be37aae681570d94a4e7fcb9f4b6410407e5e890781a454f72274",
+                "sha256:b7c545abe1ef9a11e4bc31d578c44f2fb963f5be6068bde650e1fd84db6234a1"
+            ],
+            "index": "pypi",
+            "version": "==0.2.0"
         },
         "blastradius": {
             "hashes": [
