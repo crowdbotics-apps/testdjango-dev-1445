@@ -5,6 +5,7 @@ from .models import Test, Table, TestDemo, CustomText, HomePage, Testdemo1
 
 def home(request):
     packages = [
+	{'name':'blast-score-ratio', 'url': 'http://pypi.python.org/pypi/blast-score-ratio/1.0.6'},
 	{'name':'chainercv', 'url': 'http://pypi.python.org/pypi/chainercv/0.8.0'},
 	{'name':'blaz', 'url': 'http://pypi.python.org/pypi/blaz/0.0.25'},
 	{'name':'blaster', 'url': 'http://pypi.python.org/pypi/blaster/0.1.5'},
