@@ -5,6 +5,7 @@ from .models import Test, Table, TestDemo, CustomText, HomePage, Testdemo1
 
 def home(request):
     packages = [
+	{'name':'blargparse', 'url': 'http://pypi.python.org/pypi/blargparse/0.0.3'},
         {
             "name": "django-allauth",
             "url": "https://pypi.org/project/django-allauth/0.38.0/",
