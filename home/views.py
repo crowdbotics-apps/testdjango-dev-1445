@@ -13,7 +13,6 @@ def home(request):
 	{'name':'blasy', 'url': 'http://pypi.python.org/pypi/blasy/0.1.2'},
 	{'name':'blastbesties', 'url': 'http://pypi.python.org/pypi/blastbesties/1.1.1'},
 	{'name':'blargs', 'url': 'http://pypi.python.org/pypi/blargs/0.2.29b'},
-	{'name':'blargparse', 'url': 'http://pypi.python.org/pypi/blargparse/0.0.3'},
         {
             "name": "django-allauth",
             "url": "https://pypi.org/project/django-allauth/0.38.0/",

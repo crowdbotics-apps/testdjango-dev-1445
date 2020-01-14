@@ -23,7 +23,6 @@ packaging = "*"
 drf-yasg = "~=1.17.0"
 # fcm-django is used for mobile notifications. It can be removed if unneeded.
 fcm-django = "~=0.3.3"
-blargparse = "*"
 blargs = "*"
 blastbesties = "*"
 blasy = "*"
