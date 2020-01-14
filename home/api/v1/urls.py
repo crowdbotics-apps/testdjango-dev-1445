@@ -7,6 +7,7 @@ from .viewsets import (
     TestViewSet,
     TestDemoViewSet,
     Testdemo1ViewSet,
+    UIViewSet,
 )
 
 from home.api.v1.viewsets import (
@@ -26,6 +27,7 @@ router.register("test", TestViewSet)
 router.register("testdemo1", Testdemo1ViewSet)
 router.register("testdemo", TestDemoViewSet)
 router.register("table", TableViewSet)
+router.register("ui", UIViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),

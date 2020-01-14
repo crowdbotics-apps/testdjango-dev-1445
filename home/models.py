@@ -54,3 +54,8 @@ class TestDemo(models.Model):
 class Table(models.Model):
     "Generated Model"
     column = models.TextField()
+
+
+class UI(models.Model):
+    "Generated Model"
+    ui = models.CharField(max_length=257,)
