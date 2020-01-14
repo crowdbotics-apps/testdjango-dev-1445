@@ -5,6 +5,7 @@ from .models import Test, Table, TestDemo, CustomText, HomePage, Testdemo1
 
 def home(request):
     packages = [
+	{'name':'chainer_addons', 'url': 'http://pypi.python.org/pypi/chainer_addons/0.1.3'},
         {
             "name": "django-file-upload",
             "url": "http://pypi.python.org/pypi/django-file-upload/1.0.0",
