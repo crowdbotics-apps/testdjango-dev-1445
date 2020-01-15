@@ -90,3 +90,8 @@ class TestModel(models.Model):
 class Dummy(models.Model):
     "Generated Model"
     dummy = models.GenericIPAddressField(protocol="IPv4", unpack_ipv4=False,)
+
+
+class TestD(models.Model):
+    "Generated Model"
+    test = models.GenericIPAddressField(protocol="IPv4", unpack_ipv4=False,)

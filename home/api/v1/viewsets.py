@@ -6,6 +6,7 @@ from .serializers import (
     HomePageSerializer,
     TableSerializer,
     TestSerializer,
+    TestDSerializer,
     TestDataSerializer,
     TestDemoSerializer,
     Testdemo1Serializer,
@@ -40,6 +41,7 @@ from home.models import (
     HomePage,
     Table,
     Test,
+    TestD,
     TestData,
     TestDemo,
     Testdemo1,
@@ -194,3 +196,12 @@ class DummyViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = Dummy.objects.all()
+
+
+class TestDViewSet(viewsets.ModelViewSet):
+    serializer_class = TestDSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = TestD.objects.all()

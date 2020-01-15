@@ -14,6 +14,7 @@ from home.models import (
     HomePage,
     Table,
     Test,
+    TestD,
     TestData,
     TestDemo,
     Testdemo1,
@@ -147,4 +148,10 @@ class TestModelSerializer(serializers.ModelSerializer):
 class DummySerializer(serializers.ModelSerializer):
     class Meta:
         model = Dummy
+        fields = "__all__"
+
+
+class TestDSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TestD
         fields = "__all__"

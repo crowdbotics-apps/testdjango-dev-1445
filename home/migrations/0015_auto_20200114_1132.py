@@ -6,19 +6,24 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0014_customtext_titledesign'),
+        ("home", "0014_customtext_titledesign"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Dummy',
+            name="Dummy",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('dummy', models.GenericIPAddressField(protocol='IPv4')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("dummy", models.GenericIPAddressField(protocol="IPv4")),
             ],
         ),
-        migrations.RemoveField(
-            model_name='customtext',
-            name='titledesign',
-        ),
+        migrations.RemoveField(model_name="customtext", name="titledesign",),
     ]
